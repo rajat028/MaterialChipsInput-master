@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.pchmn.sample.materialchipsinput.ContactListActivity">
+
+    <com.pchmn.materialchips.ChipsInput
+        android:id="@+id/chips_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hint="Enter a name"
+        app:maxRows="3"
+        app:chip_hasAvatarIcon="false"
+        app:chip_deletable="true"
+        app:chip_labelColor="@color/colorAccent"
+        app:showChipDetailed="false"
+        />
+
+    <Button
+        android:id="@+id/validate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Validate"/>
+
+    <TextView
+        android:id="@+id/chip_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
